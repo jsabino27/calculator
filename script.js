@@ -1,18 +1,3 @@
-<<<<<<< HEAD
-const calcBtns = document.querySelectorAll('[data-numbers]');
-const operatorBtns = document.querySelectorAll('[data-operator]');
-const currentScreen = document.getElementById('calcScreen');
-
-calcBtns.forEach((button) => 
-    button.addEventListener('click', () => changeNum(button.textContent))
-)
-
-function changeNum(number){
-    currentScreen.textContent += number;
-}
-
-function add(num1, num2){
-=======
 let firstOper = ''
 let secondOper = ''
 let currentOper = null
@@ -49,7 +34,6 @@ function clear() {
 }
 
 function add(num1, num2) {
->>>>>>> e3d369794df1d9ba89303ae2c8710ba24f68da87
     return num1 + num2;
 }
 
@@ -65,15 +49,8 @@ function divide(num1, num2) {
     return num1 / num2;
 }
 
-<<<<<<< HEAD
-function operate(operator, num1, num2){
-    num1 = Number(num1);
-    num2 = Number(num2);
-    switch(operator){
-=======
 function operate(operator, num1, num2) {
     switch (operator) {
->>>>>>> e3d369794df1d9ba89303ae2c8710ba24f68da87
         case '+':
             return add(num1, num2);
         case '-':
@@ -86,5 +63,3 @@ function operate(operator, num1, num2) {
             return null;
     }
 }
-
-console.log(operate('', 1, 2));
